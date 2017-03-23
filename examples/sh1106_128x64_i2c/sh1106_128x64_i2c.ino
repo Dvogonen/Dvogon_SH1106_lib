@@ -26,7 +26,7 @@
 #include <kernen_sh1106_lib.h>
 
 #define OLED_RESET 4
-Adafruit_SH1106 display(OLED_RESET);
+kernen_sh1106_lib display(OLED_RESET);
 
 #define NUMFLAKES 10
 #define XPOS 0

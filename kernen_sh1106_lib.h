@@ -79,16 +79,16 @@ Dvogonen (kjell kernen) bugfixed and documented in 2017.
 #endif
 
 #if defined SH1106_128_64
-  #define SH1106_LCDWIDTH                  128
-  #define SH1106_LCDHEIGHT                 64
+  #define SH1106_LCDWIDTH		128
+  #define SH1106_LCDHEIGHT      64
 #endif
 #if defined SH1106_128_32
-  #define SH1106_LCDWIDTH                  128
-  #define SH1106_LCDHEIGHT                 32
+  #define SH1106_LCDWIDTH       128
+  #define SH1106_LCDHEIGHT      32
 #endif
 #if defined SH1106_96_16
-  #define SH1106_LCDWIDTH                  96
-  #define SH1106_LCDHEIGHT                 16
+  #define SH1106_LCDWIDTH       96
+  #define SH1106_LCDHEIGHT      16
 #endif
 
 #define SH1106_SETCONTRAST 0x81
@@ -137,29 +137,19 @@ Dvogonen (kjell kernen) bugfixed and documented in 2017.
 #define SH1106_VERTICAL_AND_RIGHT_HORIZONTAL_SCROLL 0x29
 #define SH1106_VERTICAL_AND_LEFT_HORIZONTAL_SCROLL 0x2A
 
-class Adafruit_SH1106 : public Adafruit_GFX {
+class kernen_sh1106_lib : public Adafruit_GFX {
  public:
-  Adafruit_SH1106(int8_t SID, int8_t SCLK, int8_t DC, int8_t RST, int8_t CS);
-  Adafruit_SH1106(int8_t DC, int8_t RST, int8_t CS);
-  Adafruit_SH1106(int8_t RST);
+  kernen_sh1106_lib(int8_t SID, int8_t SCLK, int8_t DC, int8_t RST, int8_t CS);
+  kernen_sh1106_lib(int8_t DC, int8_t RST, int8_t CS);
+  kernen_sh1106_lib(int8_t RST);
 
   void begin(uint8_t switchvcc = SH1106_SWITCHCAPVCC, uint8_t i2caddr = SH1106_I2C_ADDRESS, bool reset=true);
   void SH1106_command(uint8_t c);
   void SH1106_data(uint8_t c);
-
   void clearDisplay(void);
   void invertDisplay(uint8_t i);
   void display();
-
-  /*void startscrollright(uint8_t start, uint8_t stop);
-  void startscrollleft(uint8_t start, uint8_t stop);
-
-  void startscrolldiagright(uint8_t start, uint8_t stop);
-  void startscrolldiagleft(uint8_t start, uint8_t stop);
-  void stopscroll(void); */
-  
   void dim(uint8_t contrast);
-
   void drawPixel(int16_t x, int16_t y, uint16_t color);
 
   virtual void drawFastVLine(int16_t x, int16_t y, int16_t h, uint16_t color);
