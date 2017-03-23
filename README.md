@@ -1,16 +1,22 @@
-Adafruit_SH1106
-===============
+Dvogon SH1106 Library
+=====================
 
-Adafruit graphic library for SH1106 driver lcds.
-
-some small oled lcd use SH1106 driver.
-
-I change the adafruit SSD1306 to SH1106 
-
-SH1106 driver similar to SSD1306. thus, just change the display() method. 
- 
-However, SH1106 driver don't provide several functions such as scroll commands.
+This is an adaption of Adafruit's SSD1306 OLED driver library to fit the similarly looking SH1106 displays.
+The original adaption was made by Wonho-Maker in 2015. here is a link to the original project:
+https://github.com/wonho-maker/Adafruit_SH1106
 
 
- Adafruit-GFX-Library
- https://github.com/adafruit/Adafruit-GFX-Library
+The only major change in comparison to the original Adafruit library is that the display function has been changed.
+Another difference is that the SH1106 does not provide scroll functionalities like the SSD1306.
+The coresponding library functions were removed by Wonho-maker.
+
+
+The library is intended to be used together with the Adafruit-GFX-Library
+https://github.com/adafruit/Adafruit-GFX-Library
+
+
+The somewhat lacking documentation of the adaption as well as a minor bug propted me (Dvogonen) to branch the library and fix those missing details.
+The project name was changed to Dvogon SH1106 Library.
+This is not out of disrespect in regards to Adafruit or Wonho-Maker. I simply want to avoid confusion and mixup with the original Adafruit library and Wonho-Maker's.
+
+
