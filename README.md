@@ -1,4 +1,4 @@
-Dvogon SH1106 Library
+Kernen SH1106 Library
 =====================
 
 This is an adaption of Adafruit's SSD1306 OLED driver library to fit the similarly looking SH1106 displays.
@@ -16,7 +16,7 @@ https://github.com/adafruit/Adafruit-GFX-Library
 
 
 The somewhat lacking documentation of the adaption as well as a minor bug propted me (Dvogonen) to branch the library and fix those missing details.
-The project name was changed to Dvogon SH1106 Library.
-This is not out of disrespect in regards to Adafruit or Wonho-Maker. I simply want to avoid confusion and mixup with the original Adafruit library and Wonho-Maker's.
+The project name was changed to kernen_sh1106_lib.
+This is not out of disrespect in regards to Adafruit or Wonho-Maker. I simply want to avoid confusion and mixup with the original Adafruit library and Wonho-Maker's version.
 
 

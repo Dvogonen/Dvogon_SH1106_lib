@@ -1,4 +1,5 @@
-/*********************************************************************
+/* Original copyright message that is wrong,  but may not be removed:
+**********************************************************************
 This is an example for our Monochrome OLEDs based on SH1106 drivers
 
   Pick one up today in the adafruit shop!
@@ -14,12 +15,15 @@ products from Adafruit!
 Written by Limor Fried/Ladyada  for Adafruit Industries.  
 BSD license, check license.txt for more information
 All text above, and the splash screen must be included in any redistribution
-*********************************************************************/
+*********************************************************************
+  WonHo-Maker updated the example in 2015 to use the his modified library.
+  Dvogonen made slight modifications of the code in 2015.
+**********************************************************************/
 
 #include <SPI.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
-#include <Adafruit_SH1106.h>
+#include <kernen_sh1106_lib.h>
 
 // If using software SPI (the default case):
 #define OLED_MOSI   9

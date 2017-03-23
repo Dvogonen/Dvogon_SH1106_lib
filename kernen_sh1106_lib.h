@@ -1,4 +1,5 @@
-/*********************************************************************
+/* Original copyright message that is wrong,  but may not be removed:
+**********************************************************************
 This is a library for our Monochrome OLEDs based on SSD1306 drivers
 
   Pick one up today in the adafruit shop!
@@ -13,17 +14,15 @@ products from Adafruit!
 
 Written by Limor Fried/Ladyada  for Adafruit Industries.  
 BSD license, check license.txt for more information
-All text above, and the splash screen must be included in any redistribution
-*********************************************************************/
-
-/*********************************************************************
-I change the adafruit SSD1306 to SH1106
-
-SH1106 driver similar to SSD1306 so, just change the display() method.
-
-However, SH1106 driver don't provide several functions such as scroll commands.
-
-
+All text above, and the splash screen below must be included in any
+redistribution
+*********************************************************************
+WonHo-maker adapted the library in 2015 to the SH1106 displays. 
+The only major change is the display() method.
+Several scroll-related functions are not supported by the hardware,
+so he removed those.
+*********************************************************************
+Dvogonen (kjell kernen) bugfixed and documented in 2017.
 *********************************************************************/
 
 #if ARDUINO >= 100
